@@ -5,6 +5,7 @@ void debug(long long x) {cerr << x << " ";}
 void debug(double x) {cerr << x << " ";}
 void debug(int x) {cerr << x << " ";}
 void debug(string &s) {cerr << s << " ";}
+void debug(char c) {cerr << c << " ";}
  
 template <class T> void debug(vector <T> v) {cerr << "[ "; for (T i : v) {debug(i); cerr << " ";} cerr << "]";}
 template <class T> void debug(set <T> v) {cerr << "[ "; for (T i : v) {debug(i); cerr << " ";} cerr << "]";}
