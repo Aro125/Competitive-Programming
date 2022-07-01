@@ -5,12 +5,12 @@
     #define debug(x)
 #endif
 using namespace std;
-using ll     =   long long; 
-const ll inf =   1e18;
-const ll mod =   1e9 + 7;
-const ll N   =   1e5 + 5;
+using ll       =   long long; 
+const ll inf   =   1e18;
+const ll mod   =   1e9 + 7;
+const ll N     =   1e5 + 5;
 #define pb push_back
-#define f first
+#define f  first
 #define sc second
 
 ll dx[] = {-1, 1,  0, 0, -1, -1,  1, 1};
@@ -21,7 +21,7 @@ void testCase() {
    
 }
  
-int main() {
+signed main() {
   ios::sync_with_stdio(0); cin.tie(0); 
 #ifndef ONLINE_JUDGE
  STDIO_SYSTEM();
