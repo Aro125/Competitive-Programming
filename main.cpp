@@ -12,6 +12,9 @@ const ll N   =   1e5 + 5;
 #define pb push_back
 #define f first
 #define sc second
+#define yea cout << "Yes\n"
+#define nope cout << "No\n"
+#define nl cout << endl
 
 ll dx[] = {-1, 1,  0, 0, -1, -1,  1, 1};
 ll dy[] = {0,  0, -1, 1, -1,  1, -1, 1};
