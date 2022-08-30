@@ -1,7 +1,7 @@
 #include "bits/stdc++.h"
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
-#ifndef ONLINE_JUDGE
+#ifndef LOCAL
     #include "debug.h"
 #else
     #define debug(x)
@@ -17,12 +17,16 @@ const ll N   =   1e5 + 5;
 #define sc second
 #define yea cout << "Yes\n"
 #define nope cout << "No\n"
-#define nl cout << endl
 typedef tree<pair<ll, ll>, null_type, less<pair<ll, ll>>, rb_tree_tag, 
 tree_order_statistics_node_update > pbds; /*find_by_order, order_of_key*/
 
 ll dx[] = {-1, 1,  0, 0, -1, -1,  1, 1};
 ll dy[] = {0,  0, -1, 1, -1,  1, -1, 1};
+
+ll fact(ll n) {
+  if(n <= 1) return 1;
+  return (n * fact(n - 1)) % mod;
+}
 
 void bruteForce(ll n) {
    for(ll i = 1; i <= n; i++) {
