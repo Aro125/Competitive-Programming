@@ -1,10 +1,10 @@
 #include "bits/stdc++.h"
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
-#ifndef LOCAL
-    #include "debug.h"
+#ifndef ONLINE_JUDGE
+  #include "debug.h"
 #else
-    #define debug(x)
+  #define debug(x)
 #endif
 using namespace std;
 using namespace __gnu_pbds;
@@ -20,13 +20,13 @@ const ll N   =   1e5 + 5;
 typedef tree<pair<ll, ll>, null_type, less<pair<ll, ll>>, rb_tree_tag, 
 tree_order_statistics_node_update > pbds; /*find_by_order, order_of_key*/
 
+ll fact(ll n);
+ll nCr(ll n, ll r) {return fact(n) / (fact(r) * fact(n - r));}
+ll nPr(ll n, ll r) {return fact(n) / fact(n - r);} 
+ll fact(ll n) {if (n <= 1) return 1; return n * fact(n-1) % mod;}
+
 ll dx[] = {-1, 1,  0, 0, -1, -1,  1, 1};
 ll dy[] = {0,  0, -1, 1, -1,  1, -1, 1};
-
-ll fact(ll n) {
-  if(n <= 1) return 1;
-  return (n * fact(n - 1)) % mod;
-}
 
 void bruteForce(ll n) {
    for(ll i = 1; i <= n; i++) {
@@ -35,6 +35,8 @@ void bruteForce(ll n) {
     }
    }
 }
+
+
 
 void testCase() {
   
