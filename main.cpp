@@ -40,6 +40,9 @@ ll fact(ll n) {
   if (n <= 1) return 1; 
   return (n * fact(n - 1)) % ll(1e9 + 7);
 }
+ll randRange (ll low, ll high) {
+  return rand() % (high - low) + low;
+}
 
 const ll inf =   1e18;
 const ll mod =   1e9 + 7;
