@@ -48,6 +48,12 @@ ll nCr(ll n, ll r)
     return p;
 }
 
+const ll inf =   1e18;
+const ll mod =   1e9 + 7;
+const ll MOD =   998244353;
+const ll N   =   1e5 + 5;
+const ll PI  =   3.141592653589793238462;
+
 ll fact(ll n) {
   if(n > 1) return n * fact(n - 1);
   else 
@@ -57,12 +63,6 @@ ll fact(ll n) {
 ll nPr(ll n , ll r) {
   return fact(n) / fact(n - r);
 }
-
-const ll inf =   1e18;
-const ll mod =   1e9 + 7;
-const ll MOD =   998244353;
-const ll N   =   1e5 + 5;
-const ll PI  =   3.141592653589793238462;
 
 ll expo(ll a, ll b, ll mod) {ll res = 1; while (b > 0) {if (b & 1)res = (res * a) % mod; a = (a * a) % mod; b = b >> 1;} return res;}
 
